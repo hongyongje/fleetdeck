@@ -1,0 +1,17 @@
+{
+  "name": "fleetdeck",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "IoT device fleet monitoring and signed OTA update template",
+  "license": "MIT",
+  "engines": { "node": ">=22.6" },
+  "scripts": {
+    "keygen": "node tools/keygen.ts",
+    "server": "node server/src/index.ts",
+    "sim": "node agent/src/sim.ts",
+    "test": "node --test server/test/*.test.ts",
+    "web:install": "npm --prefix web install",
+    "web:build": "npm --prefix web run build"
+  }
+}
